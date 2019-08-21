@@ -20,3 +20,4 @@ migration_station/
 /.vscode/
 /kasey/
 /results/
+.env
