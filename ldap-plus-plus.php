@@ -71,7 +71,7 @@ foreach (explode("\n", $basedn_list) as $basedn) {
 
     $mysql_UPDATE = " \"update settings set ldap_basedn = '" . trim($basedn) . "' where id = 1\"";
     $update_sql = $mysqlCLI_AUTH . $mysql_UPDATE;
-    
+
     echo "\nMYSQL UPDATE Statement: \n$update_sql\n";
     $update_results = shell_exec($update_sql);
     echo "\nbase_dn update results: \n{$update_results}";
