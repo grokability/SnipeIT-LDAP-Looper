@@ -8,3 +8,4 @@ vendor/
 /.github/
 /.vscode/
 .env
+*.cache
